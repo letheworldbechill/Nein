@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulative Taktiken erkennen</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Manipulative Taktiken erkennen und bewusst reagieren</h1>
+    </header>
+    <main>
+        <div class="section-container">
+            <!-- Unbewusste Reaktionen -->
+            <section id="unwissend">
+                <h2>Unbewusste Reaktionen</h2>
+                <div class="button-container">
+                    <button onclick="showContent('Verunsicherung', unwissendTexts[0])">Verunsicherung</button>
+                    <button onclick="showContent('Empathie', unwissendTexts[1])">Empathie</button>
+                    <button onclick="showContent('Kompromisse', unwissendTexts[2])">Kompromisse</button>
+                    <button onclick="showContent('Wutanfälle', unwissendTexts[3])">Wutanfälle</button>
+                    <button onclick="showContent('Isolation', unwissendTexts[4])">Isolation</button>
+                </div>
+            </section>
+
+            <!-- Bewusste Reaktionen -->
+            <section id="wissend">
+                <h2>Bewusste Reaktionen</h2>
+                <div class="button-container">
+                    <button onclick="showContent('Ruhe bewahren', wissendTexts[0])">Ruhe bewahren</button>
+                    <button onclick="showContent('Grenzen setzen', wissendTexts[1])">Grenzen setzen</button>
+                    <button onclick="showContent('Fakten nutzen', wissendTexts[2])">Fakten nutzen</button>
+                    <button onclick="showContent('Selbstfürsorge', wissendTexts[3])">Selbstfürsorge</button>
+                    <button onclick="showContent('Hilfe holen', wissendTexts[4])">Hilfe holen</button>
+                </div>
+            </section>
+        </div>
+        <div id="content-display">
+            <h3 id="content-title"></h3>
+            <p id="content-text"></p>
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 Manipulative Taktiken erkennen. Alle Rechte vorbehalten.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
